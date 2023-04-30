@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spicy</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+      }
+      #spicy {
+        position: absolute;
+        top: 30px;
+        left: 120px;
+        font-family: Arial;
+        font-size: 32px;
+        font-weight: bold;
+        color: #8B4513;
+      }
+      #healthy {
+        position: absolute;
+        top: 180px;
+        left: 120px;
+        font-family: Arial;
+        font-size: 96px;
+        font-weight: bold;
+        color: #8B0000;
+      }
+      #food {
+        position: absolute;
+        top: 280px;
+        left: 120px;
+        font-family: Arial;
+        font-size: 96px;
+        font-weight: bold;
+        color: #8B0000;
+      }
+      #recipes {
+        position: absolute;
+        top: 380px;
+        left: 120px;
+        font-family: Arial;
+        font-size: 96px;
+        font-weight: bold;
+        color: #8B0000;
+      }
+      #lorem {
+        position: absolute;
+        top: 550px;
+        left: 120px;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        color: #654321;
+      }
+      #lorem1 {
+        position: absolute;
+        top: 570px;
+        left: 120px;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        color: #654321;
+      }
+      #lorem2 {
+        position: absolute;
+        top: 590px;
+        left: 120px;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        color: #654321;
+      }
+      #read-more {
+        position: absolute;
+        top: 670px;
+        left: 120px;
+        background-color: #000000;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial;
+        font-size: 13px;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+      #read-more a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+      #about {
+        position: absolute;
+        top: 40px;
+        left: 450px;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        color: orange;
+      }
+      #screenshot {
+        position: absolute;
+        top: 40px;
+        left: 650px;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        color: orange;
+      }
+      #contact {
+        position: absolute;
+        top: 40px;
+        left: 850px;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        color: orange;
+      }
+      #call {
+        position: absolute;
+        top: 40px;
+        left: 1250px;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        color: orange;
+      }
+.contact-form {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 550px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"], 
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea 
+{
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical; 
+}
+
+.send-button {
+  display: block;
+  margin: 20px auto;
+  width: 120px;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 100px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.send-button:hover {
+  background-color: #0062cc; 
+}
+
+      
+    </style>
+  </head>
+  <body>
+    <div id="spicy">Spicy</div>
+    <div id="healthy">Healthy</div>
+    <div id="food">Food</div>
+    <div id="recipes">Recipes</div>
+    <div id="lorem">There are many variations of passages of Lorem Ipsum</div>
+    <div id="lorem1">available, but the majorityamised words which don't look even</div>
+    <div id="lorem2">slightly believable</div>
+    <div id="read-more">
+      <a href="#">Read More</a>
+    </div>
+    <a href="about.html">
+        <div id="about">ABOUT</div>
+      </a>
+      <a href="screenshot.html">
+        <div id="screenshot">SCREENSHOT</div>
+      </a>
+      <a href="contact.html">
+        <div id="contact">CONTACT</div>
+      </a>
+      <a href="call.html">
+        <div id="call">Call Us: 1234567890</div>
+    </a>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+      
+          <button class="send-button">Send</button>
+        </form>
+      </div>
+      
